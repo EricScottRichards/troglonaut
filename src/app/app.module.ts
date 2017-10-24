@@ -1,3 +1,4 @@
+import { AuthService } from './shared/auth.service';
 import { BrowserModule } from '@angular/platform-browser'
 import { NgModule } from '@angular/core'
 
@@ -18,7 +19,7 @@ import { AngularFireAuthModule } from 'angularfire2/auth'
     AngularFireDatabaseModule,
     AngularFireAuthModule
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 
